@@ -129,7 +129,6 @@ class FileStructureProcessor:
         vertices =c.fetchall()
         c.execute('SELECT * FROM edges')
         edges =c.fetchall()
-        logger.info(egdes)
         conn.commit()
 
         self.graph.add_vertices(len(vertices))
@@ -196,7 +195,6 @@ def get_from_sqlite():
 def create():
     """ Creating Graph object from file structure, and get its JSON representation """
     # for clean test cases, first the available databases will be flushed
-    os.remove('igraph.db')
     get_redis().flushdb()
     graph = FileStructureProcessor()
     return graph.get_graph()
