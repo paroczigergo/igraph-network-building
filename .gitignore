@@ -1,0 +1,7 @@
+.idea
+test.py
+*.db
+*.png
+test
+__pycache__
+*.out
