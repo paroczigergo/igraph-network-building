@@ -1,4 +1,4 @@
-# igraph network building
+# Igraph network building
 This exercise is about using igraph (a graph module) for building network of a (sub-)folder/files structure of the local drive with storing extra file informations with the vertices.
 
 For the implementation the following libraries and tools were used with Python 3.6.4:
